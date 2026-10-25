@@ -1,0 +1,13 @@
+class CfgCommunicationMenu 
+{
+    class MySupportAction 
+    {
+        text = "Generate Random enemy"; // Text shown in the communication menu
+        submenu = "";                 // Submenu class name (leave empty for direct action)
+        expression = "[] execVM 'randomEnemy.sqf';"; // SQF code or script executed when selected
+        //icon = "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\supply_ca.paa"; // Icon path
+        cursor = "";                  // Custom cursor (optional)
+        enable = "1.0";               // Condition for item to be enabled (string expression evaluating to bool)
+        removeAfterExpressionCall = 0;// Set to 1 to remove the item automatically after one use
+    };
+};
