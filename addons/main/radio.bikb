@@ -1,0 +1,20 @@
+class Sentences
+{
+	class Radio 
+	{
+		text = "%Msg";
+
+		// available words are defined in config > RadioProtocol > Words
+		speech[] = { "%Msg" };
+
+		class Arguments 
+		{
+			class Msg { type = "simple"; };	
+		};
+	};
+};
+
+class Arguments {};
+class Special {};
+startWithVocal[] = {  };
+startWithConsonant[] = {  };
